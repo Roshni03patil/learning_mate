@@ -1,0 +1,150 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f9; /* Light lavender background */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+
+/* Header & Navigation */
+header {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height:60px;
+   
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+   
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 60px;
+    margin-right: 10px;
+    padding-bottom: 20px;
+}
+
+.logo h2 {
+    font-size: 24px;
+    color: #6a5acd;
+    margin-top: 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #6a5acd;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #eae6f8;
+    transform: translateY(-3px);
+}
+/* Subject selection styling */
+.subject-selection {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 190px;;
+}
+
+.subject-selection h2{
+   margin-bottom: 10px;
+}
+
+.subject-selection select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+/* Quiz container styling */
+.quiz-container {
+    background-color: #fff; /* White background for the quiz */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+/* Question styling */
+.question h3 {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Label and options styling */
+label {
+    display: block;
+    background-color: #f7f7f7; /* Soft white background */
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect on options */
+label:hover {
+    background-color: #e1e2e6; /* Slight lavender hover effect */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #6c5b7b; /* Lavender background for the submit button */
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect on submit button */
+input[type="submit"]:hover {
+    background-color: #1046e8; /* Darker lavender shade on hover */
+}

@@ -1,0 +1,143 @@
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9; /* Light background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Form Container Styling */
+.form-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 380px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px; /* Adjust height to make space for buttons */
+}
+
+/* Heading Style */
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Toggle Between Forms */
+.form-toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-toggle button {
+    font-size: 16px;
+    background: transparent;
+    color: #9b7ed1; /* Lavender color */
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.form-toggle button:hover {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+/* Active Button Style */
+.form-toggle button.active {
+    color: #6f4b8b; /* Darker lavender color */
+    font-weight: 600;
+    border-bottom: 2px solid #6f4b8b; /* Bottom border for active button */
+}
+
+/* Form Content Styling */
+.form-content {
+    display: none;
+    margin-top: 20px;
+}
+
+.form-content.active {
+    display: block;
+}
+
+/* Input Fields Styling */
+input {
+    width: 100%;
+    padding: 14px 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #9b7ed1;
+    outline: none;
+}
+
+/* Button Styles */
+button[type="submit"] {
+    padding: 14px 20px;
+    background: linear-gradient(145deg, #9b7ed1, #6f4b8b); /* Lavender gradient */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(145deg, #6f4b8b, #9b7ed1); /* Reverse gradient on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Shadow on hover */
+}
+
+/* Error Message Styling */
+.error {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Disabled Button Styling */
+button[type="submit"]:disabled {
+    background: #d3c5e3;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .form-container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
