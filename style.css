@@ -64,6 +64,8 @@ nav {
     font-size: 24px;
     color: #6a5acd;
     padding-top: 20px;
+    user-select: none; /* Prevent text selection */
+    cursor: default;
 }
 
 .nav-links {
